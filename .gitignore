@@ -1,0 +1,7 @@
+node_modules/
+.env
+data/pinterest-tokens.json
+logs/
+preview/
+
+# data/state.json BILEREK izlenir — GitHub Actions her calismada commit'liyor.

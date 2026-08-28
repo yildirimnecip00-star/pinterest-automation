@@ -1,0 +1,21 @@
+{
+  "name": "pinterest-automation",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Etsy shop listings (pillowcase / mini rug / rug) -> Pinterest pins, fully automated via GitHub Actions",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dry-run": "node src/index.js --dry-run",
+    "variants": "node scripts/preview-variants.js",
+    "auth": "node scripts/pinterest-auth.js",
+    "auth:exchange": "node scripts/pinterest-auth.js --exchange"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.68.0",
+    "dotenv": "^16.4.5",
+    "exiftool-vendored": "^28.3.1",
+    "fast-xml-parser": "^4.5.1",
+    "sharp": "^0.33.5"
+  }
+}
